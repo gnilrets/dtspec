@@ -9,7 +9,9 @@ from dtspec.core import Identifier, Factory, Source, Target, Scenario, Case
 from dtspec.expectations import DataExpectation
 
 
-with open(os.path.dirname(os.path.realpath(__file__)) + "/schema/dtspec-schema.json", "r") as stream:
+with open(
+    os.path.dirname(os.path.realpath(__file__)) + "/schema/dtspec-schema.json", "r"
+) as stream:
     SCHEMA = yaml.safe_load(stream)
 
 
