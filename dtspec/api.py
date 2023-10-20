@@ -10,9 +10,7 @@ from dtspec.expectations import DataExpectation
 
 
 with open(
-    os.path.dirname(os.path.realpath(__file__)) + "/schema/dtspec-schema.json",
-    "r",
-    encoding="utf-8",
+    os.path.dirname(os.path.realpath(__file__)) + "/schema/dtspec-schema.json", "r", encoding="utf-8"
 ) as stream:
     SCHEMA = yaml.safe_load(stream)
 
